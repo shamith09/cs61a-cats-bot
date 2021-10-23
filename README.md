@@ -10,7 +10,7 @@ Install splinter using pip:
 
 `pip install splinter`
 
-Follow instructions on https://splinter.readthedocs.io/en/latest/drivers/chrome.html to set up the Chrome driver
+Follow instructions on https://splinter.readthedocs.io/en/latest/drivers/chrome.html to set up the Chrome driver or use a different browser.
 
 Run cats_bot.py:
 

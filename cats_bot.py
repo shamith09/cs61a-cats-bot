@@ -1,11 +1,11 @@
 import time
 from splinter import Browser
-from PIL import Image
-import requests
-import urllib
+# from PIL import Image
+# import requests
+# import urllib
 
-import easyocr
-reader = easyocr.Reader(['en'])
+# import easyocr
+# reader = easyocr.Reader(['en'])
 
 executable_path = {'executable_path':'C:/Users/shami/Downloads/chromedriver_win32/chromedriver'}
 
@@ -23,19 +23,15 @@ with Browser('chrome', **executable_path) as browser:
             text += letters[i].value
     browser.find_by_css('.InputField').type(text, slowly=False)
     browser.find_by_xpath('/html/body/div[3]/div/div/div[2]/div/button').click()
-    """
-    ANSWERS = {
 
-    }
-    """
-    captcha_urls = browser.find_by_tag('img')
-    for c in captcha_urls:
-        urllib.request.urlretrieve(c._element.get_attribute('src'), './img')
-        try:    
-            txt = reader.readtext('img', detail=0)[0]
-        except:
-            print('error')
-        browser.find_by_css('.InputField').type(txt, slowly=False)
+    # captcha_urls = browser.find_by_tag('img')
+    # for c in captcha_urls:
+    #     urllib.request.urlretrieve(c._element.get_attribute('src'), './img')
+    #     try:    
+    #         txt = reader.readtext('img', detail=0)[0]
+    #     except:
+    #         print('error')
+    #     browser.find_by_css('.InputField').type(txt, slowly=False)
 
-    browser.find_by_xpath('/html/body/div[3]/div/div/div[2]/div/div[3]/button').click()
+    # browser.find_by_xpath('/html/body/div[3]/div/div/div[2]/div/div[3]/button').click()
     time.sleep(60)

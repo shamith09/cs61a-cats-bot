@@ -4,4 +4,14 @@ Splinter bot that attempts to get on the leaderboard on cats.cs61a.org. Max typi
 
 Currently the bot is stopped by the captcha, so I tried to get around it using OCR. However, OCR doesn't seem to be very good at solving captchas, so I will have to find another way to bypass it.
 
-## yo
+## How to use:
+
+Install splinter using pip:
+
+`pip install splinter`
+
+Follow instructions on https://splinter.readthedocs.io/en/latest/drivers/chrome.html to set up the Chrome driver
+
+Run cats_bot.py:
+
+`py cats_bot.py`

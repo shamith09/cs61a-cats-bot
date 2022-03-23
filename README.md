@@ -14,4 +14,4 @@ Follow instructions on https://splinter.readthedocs.io/en/latest/drivers/chrome.
 
 Run cats_bot.py:
 
-`py cats_bot.py`
+`python3 cats_bot.py`
